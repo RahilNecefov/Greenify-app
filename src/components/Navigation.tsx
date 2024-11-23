@@ -7,21 +7,21 @@ const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
   
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-4 py-2">
+    <nav className="fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-sm border-t border-green-100 px-4 py-2">
       <div className="max-w-lg mx-auto flex justify-around items-center">
-        <Link to="/" className={`flex flex-col items-center ${isActive("/") ? "text-primary" : "text-gray-600"}`}>
+        <Link to="/" className={`flex flex-col items-center ${isActive("/") ? "text-green-600" : "text-gray-600"}`}>
           <Home size={24} />
           <span className="text-xs mt-1">Home</span>
         </Link>
-        <Link to="/learn" className={`flex flex-col items-center ${isActive("/learn") ? "text-primary" : "text-gray-600"}`}>
+        <Link to="/learn" className={`flex flex-col items-center ${isActive("/learn") ? "text-green-600" : "text-gray-600"}`}>
           <BookOpen size={24} />
           <span className="text-xs mt-1">Learn</span>
         </Link>
-        <Link to="/progress" className={`flex flex-col items-center ${isActive("/progress") ? "text-primary" : "text-gray-600"}`}>
+        <Link to="/progress" className={`flex flex-col items-center ${isActive("/progress") ? "text-green-600" : "text-gray-600"}`}>
           <Award size={24} />
           <span className="text-xs mt-1">Progress</span>
         </Link>
-        <Link to="/profile" className={`flex flex-col items-center ${isActive("/profile") ? "text-primary" : "text-gray-600"}`}>
+        <Link to="/profile" className={`flex flex-col items-center ${isActive("/profile") ? "text-green-600" : "text-gray-600"}`}>
           <User size={24} />
           <span className="text-xs mt-1">Profile</span>
         </Link>
