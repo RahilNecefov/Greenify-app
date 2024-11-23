@@ -1,4 +1,4 @@
-import { Home, BookOpen, Award, User } from "lucide-react";
+import { Home, BookOpen, User } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const Navigation = () => {
@@ -16,10 +16,6 @@ const Navigation = () => {
         <Link to="/learn" className={`flex flex-col items-center ${isActive("/learn") ? "text-green-600" : "text-gray-600"}`}>
           <BookOpen size={24} />
           <span className="text-xs mt-1">Learn</span>
-        </Link>
-        <Link to="/progress" className={`flex flex-col items-center ${isActive("/progress") ? "text-green-600" : "text-gray-600"}`}>
-          <Award size={24} />
-          <span className="text-xs mt-1">Progress</span>
         </Link>
         <Link to="/profile" className={`flex flex-col items-center ${isActive("/profile") ? "text-green-600" : "text-gray-600"}`}>
           <User size={24} />
